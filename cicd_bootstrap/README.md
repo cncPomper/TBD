@@ -35,7 +35,7 @@ No modules.
 | <a name="input_github_repo"></a> [github\_repo](#input\_github\_repo) | Github repository | `string` | n/a | yes |
 | <a name="input_iac_service_account"></a> [iac\_service\_account](#input\_iac\_service\_account) | Service account to be used with CI/CD workload identity | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Project name | `string` | n/a | yes |
-| <a name="input_region"></a> [region](#input\_region) | GCP region | `string` | `"europe-west1"` | no |
+| <a name="input_region"></a> [region](#input\_region) | GCP region | `string` | `"europe-central2"` | no |
 
 ## Outputs
 
