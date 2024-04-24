@@ -26,7 +26,7 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
 8. Analyze terraform code. Play with terraform plan, terraform graph to investigate different modules.
 
-**OPIS**
+Moduł dbt_docker_image jest skonteneryzowaną wersją data build tool. Dockerowy obraz dbt pozwala na łatwe tworzenie i zarządzanie dbt w środowisku. Moduł zawiera odniesienia do rejestru terraforma, sparka i projektu oraz dockerowy obraz dbt.
 
   ![img.png](doc/figures/dbt_docker_image.png)
 
