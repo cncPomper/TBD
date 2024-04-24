@@ -66,9 +66,14 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 12. Start an interactive session from Vertex AI workbench:
 
     ***place the screenshot of notebook here***
+      ![img.png](doc/figures/vertex_ai_pyspark.png)
 
 13. Find and correct the error in spark-job.py
 
+    Zmiana nazwy bucketa z defaultowego:
+    DATA_BUCKET = "gs://tbd-2024l-9900-data/data/shakespeare/"
+    na
+    DATA_BUCKET = "gs://tbd-2024l-310895-data/data/shakespeare/"
     ***describe the cause and how to find the error***
 
 14. Additional tasks using Terraform:
