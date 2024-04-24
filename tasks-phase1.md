@@ -59,8 +59,27 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 11. Create a BigQuery dataset and an external table using SQL
 
     ***place the code and output here***
+    ```sql
+      CREATE SCHEMA IF NOT EXISTS demo OPTIONS(location = 'europe-west1');
+
+      CREATE OR REPLACE EXTERNAL TABLE demo.shakespeare
+        OPTIONS (
+
+        format = 'ORC',
+        uris = ['gs://tbd-2024l-310895-data/data/shakespeare/*.orc']);
+
+
+      SELECT * FROM demo.shakespeare ORDER BY sum_word_count DESC LIMIT 5;
+    ```
+
+  ![img.png](doc/figures/bigquery_success.png)
+
+  ## Query result
+
+  ![img.png](doc/figures/bigquery_result.png)
 
     ***why does ORC not require a table schema?***
+  ### ORC nie potrzebuje schematu tabeli ponieważ sam go jest w stanie odczytać z danych wejściowych
 
 
 12. Start an interactive session from Vertex AI workbench:
@@ -70,6 +89,7 @@ create a sample usage profiles and add it to the Infracost task in CI/CD pipelin
 
 13. Find and correct the error in spark-job.py
 
+    Błąd wynikał z podania złego bucketa w pliku `spark-job.py`. Żeby wychwycić ten błąd należało
     Zmiana nazwy bucketa z defaultowego:
     DATA_BUCKET = "gs://tbd-2024l-9900-data/data/shakespeare/"
     na
