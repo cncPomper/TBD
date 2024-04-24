@@ -6,6 +6,8 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
    Group 5
 
+   Piotr Kitłowski, Paweł Skierś, Kacper Królewiak
+
    https://github.com/cncPomper/TBD
 
 2. Follow all steps in README.md.
@@ -46,7 +48,7 @@ gcloud compute ssh --zone "europe-west1-c" "tbd-cluster-m" --tunnel-through-iap 
     3. List of buckets for disposal
     4. Description of network communication (ports, why it is necessary to specify the host for the driver) of Apache Spark running from Vertex AI Workbech
 
-    ***place your diagram here***
+  ![img.png](doc/figures/tbd-diagram.png)
 
 11. Create a new PR and add costs by entering the expected consumption into Infracost
 For all the resources of type: `google_artifact_registry`, `google_storage_bucket`, `google_service_networking_connection`
