@@ -6,6 +6,8 @@ IMPORTANT ❗ ❗ ❗ Please remember to destroy all the resources after each wo
 
    Group 5
 
+   Piotr Kitłowski, Paweł Skierś, Kacper Królewiak
+
    https://github.com/cncPomper/TBD
 
 2. Follow all steps in README.md.
