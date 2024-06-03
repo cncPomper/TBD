@@ -61,11 +61,11 @@ module "vertex_ai_workbench" {
 #
 module "dataproc" {
   depends_on   = [module.vpc]
-  source       = "./modules/dataproc"
+  source       = "github.com/bdg-tbd/tbd-workshop-1.git?ref=v1.0.36/modules/dataproc"
   project_name = var.project_name
   region       = var.region
   subnet       = module.vpc.subnets[local.notebook_subnet_id].id
-  machine_type = "e2-standard-2"
+  machine_type = "e2-standard-4"
 }
 
 ## Uncomment for Dataproc batches (serverless)
