@@ -28,6 +28,7 @@ in profiles.yml.
 4. In the notebook, collect console output from dbt run, then parse it and retrieve total execution time and execution times of processing each model. Save the results from each number of executors. 
 
 5. Analyze the performance and scalability of execution times of each model. Visualize and discucss the final results.
+![wykres](wykres.png)
 
-
+Jak możemy zauważyć zwiększenie liczby egzekutorów zmniejsza czas potrzebny na wykonanie zadań. Warto jednak zaznaczyć, że nie jest to wzrost proporcjonalny do liczby egzekutorów, co oczywiście jest spodziewanym rezultatem. Dodatkowo, zysk z większej ilości egzekutorów jest zdecydowanie największy dla najdłuższych zadań. Dla zadań krótszych poprawa czasu wykonywania jest niewielka albo w ogóle zaniedbywalnie mała.
    
