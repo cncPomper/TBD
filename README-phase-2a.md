@@ -19,6 +19,7 @@ Worth to read:
 2. Authors:
 
    **Grupa nr 5**
+   Piotr Kitłowski, Paweł Skierś, Kacper Królewiak
 
    **Link do repo: https://github.com/cncPomper/TBD**
 
